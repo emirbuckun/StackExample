@@ -14,7 +14,7 @@ namespace StackSample
 
       // Displays the properties and values of the Stack.
       Console.WriteLine("myStack");
-      Console.WriteLine("\tCount:    {0}", myStack.Count);
+      Console.WriteLine($"\tCount:    {myStack.Count}");
       Console.Write("\tValues:");
       PrintValues(myStack);
     }
@@ -22,7 +22,7 @@ namespace StackSample
     public static void PrintValues(IEnumerable myCollection)
     {
       foreach (object obj in myCollection)
-        Console.Write("    {0}", obj);
+        Console.Write($" {obj}");
       Console.WriteLine();
     }
   }
